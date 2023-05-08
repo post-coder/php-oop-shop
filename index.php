@@ -2,7 +2,7 @@
 
 require_once 'db.php';
 
-// var_dump($products);
+var_dump($products);
 
 
 ?>
@@ -28,8 +28,7 @@ require_once 'db.php';
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-  
-  <div class="container">
+  <div class="container-fluid">
     <h1 class="mt-4">
       Animal Shop 
     </h1>
@@ -39,7 +38,7 @@ require_once 'db.php';
       <?php
       foreach($products as $singleProduct) {
       ?>
-      <div class="col-4">
+      <div class="col-6">
         <div class="card" style="width: 18rem;">
           <div class="card-body">
 

@@ -13,7 +13,15 @@ $product = new Product("Prodotto generico", 3.14, "prodot.png", $categories[0]);
 
 $crock = new Food("Crock", 2.7, "crock.jpg", "pesce, nutella", $categories[1]);
 
+
 $pallin = new Toy("The Pallin", 5, "pallin.jpg", $categories[0], "plastic");
+
+
+try {
+  $pallin->setDiscount(100);
+} catch (Exception $e) {
+  echo "Errore nel settare lo sconto: " . $e->getMessage();
+}
 
 // var_dump($product);
 // var_dump($crock);

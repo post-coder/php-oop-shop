@@ -5,7 +5,12 @@
 require_once __DIR__ . '/Product.php';
 require_once __DIR__ . '/Category.php';
 
+require_once __DIR__ . '/../Traits/Discountable.php';
+
+
 class Food extends Product {
+
+  use Discountable;
 
   protected $ingredients;
 
